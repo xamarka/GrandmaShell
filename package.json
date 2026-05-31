@@ -1,0 +1,39 @@
+{
+  "name": "tv-box",
+  "version": "1.0.0",
+  "description": "GrandmaShell — Smart TV интерфейс для пожилых людей",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:linux": "electron-builder --linux",
+    "build:win": "electron-builder --win"
+  },
+  "author": "xamarka",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.grandmashell.app",
+    "productName": "GrandmaShell",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Video"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "autostart/**/*"
+    ]
+  }
+}

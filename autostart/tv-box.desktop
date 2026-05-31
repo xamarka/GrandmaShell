@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=GrandmaShell
+Comment=Smart TV интерфейс для пожилых людей
+Exec=/opt/grandmashell/grandmashell %U
+Icon=grandmashell
+Terminal=false
+Categories=AudioVideo;Video;
+StartupNotify=false
+X-GNOME-Autostart-enabled=true
